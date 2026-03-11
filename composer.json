@@ -1,0 +1,20 @@
+{
+    "name": "denal05/macademy-m2-power-theming-juno",
+    "description": "The Juno theme is built on top of the Blank theme",
+    "require": {
+        "php": "^8",
+        "magento/framework": ">=103",
+        "magento/theme-frontend-blank": ">=100"
+    },
+    "type": "magento2-theme",
+    "version": "0.0.1",
+    "license": [
+        "MIT"
+    ],
+    "autoload": {
+        "files": [
+            "registration.php"
+        ]
+    }
+}
+
