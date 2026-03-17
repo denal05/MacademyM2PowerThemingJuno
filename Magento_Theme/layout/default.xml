@@ -8,8 +8,9 @@
                 <argument name="logo_height" xsi:type="string">61</argument>
             </arguments>
         </referenceBlock>
+        <referenceBlock name="report.bugs" display="false"/>
         <referenceContainer name="footer">
-            <container name="juno-theme.phone-number-container" htmlTag="div" htmlId="phone-number-container">
+            <container name="juno-theme.phone-number-container" htmlTag="div" htmlId="phone-number-container" before="copyright">
                 <block name="juno-theme.phone-number-block" template="Juno_Theme::phone-number.phtml"/>
             </container>
         </referenceContainer>
