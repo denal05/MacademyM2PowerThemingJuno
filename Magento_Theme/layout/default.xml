@@ -1,5 +1,6 @@
 <?xml version="1.0"?>
-<page layout="3columns" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:View/Layout/etc/page_configuration.xsd">
+<page layout="3columns" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+      xsi:noNamespaceSchemaLocation="urn:magento:framework:View/Layout/etc/page_configuration.xsd">
     <body>
         <referenceBlock name="logo">
             <arguments>
@@ -11,7 +12,11 @@
         <referenceBlock name="report.bugs" display="false"/>
         <referenceContainer name="footer">
             <container name="juno-theme.phone-number-container" htmlTag="div" htmlId="phone-number-container" before="copyright">
-                <block name="juno-theme.phone-number-block" template="Juno_Theme::phone-number.phtml"/>
+                <block name="juno-theme.phone-number-block" template="Denal05_JunoTheme::phone-number.phtml">
+                    <arguments>
+                        <argument name="phone_number_view_model" xsi:type="object">Denal05\JunoTheme\ViewModel\PhoneNumber</argument>
+                    </arguments>
+                </block>
             </container>
         </referenceContainer>
     </body>
